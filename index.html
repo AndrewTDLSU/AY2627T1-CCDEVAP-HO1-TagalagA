@@ -2,17 +2,103 @@
 <html>
 
     <head>
-        <title>Index Page</title>
+        <title>About Page</title>
     </head>
 
     <body>
-        <header>Index</header>
+        <header>
+            <h1>Personal Information</h1>
+        </header>
 
-        <nav>
-            <a href="about.html">Go to about page</a>
+        <section>
 
-            <a href="https://archershub.dlsu.edu.ph/">Link to AcrhersHub</a>
-        </nav>
+            <img src="media/pfp.jpg" alt="Photo" width="150" height="150" /> <hr>
+
+            <label for="baseinfo"> Basic Information: </label>
+            <pre id="baseinfo">
+                Name: Andrew Tagalag
+                Age: 21
+                ID: 124
+                Course: BSIT
+            </pre>
+
+            <a href="contacts.html">View Contacts</a>
+
+        </section> <hr>
+
+        <article>
+            <label for="desc">Short Description: </label>
+            <pre id="desc">
+                DLSU BSIT Student
+                Currently studying CCAPDEV in section N24
+                Experience in HTML from studying IT-PROG
+            </pre>
+        </article> <hr>
+
+        <div>
+            <div>
+                <label for="hobint">Hobbies/Interests: </label>
+                <pre id="hobint">
+                    Cooking
+                    Video Games
+                        >Favorite genre: Racing (Forza Horizon, Assetto Corsa)
+                        Other games I play:
+                        >Genshin Impact
+                        >Minecraft
+                        >War Thunder
+                        >GTA Online
+                        >etc...
+                </pre>  
+            </div>
+
+                <h4>Recordings of Assetto Corsa laps because I have a couple</h4>
+
+                <label for="monza">Monza</label> <br>
+                <video id="monza" controls width="250">
+                    <source src="media/2026-09-03 monza_f310b.mp4">
+                </video> <br><br>
+
+                <label for="lagunaseca">Laguna Seca</label> <br>
+                <video id="lagunaseca" controls width="250">
+                    <source src="media/2026-09-08 gr86_lagunaseca.mp4">
+                </video> <br><br>
+
+                <label for="manilabay">Manila Bay</label> <br>
+                <video id="manilabay" controls width="250">
+                    <source src="media/2026-08-02 vf26_manilabay.mp4">
+                </video> <br><br>
+
+                <label for="brc">Batangas Racing Circuit</label> <br>
+                <video id="brc" controls width="250">
+                    <source src="media/2026-08-04 mx5_brc.mp4">
+                </video>
+
+            <div>
+            </div>      
+        </div> <hr>
+
+
+
+        <aside>
+            <h3>Visitor messages</h3>
+
+            <form action="#" method="POST">
+                
+                <label for="vstname">Your name: </label>
+                <input type="text" id="vstname" name="vname" /> <br>
+
+                <label for="message" >Your message: </label>
+                <textarea id="message" name="message" rows="10" cols="50">
+                </textarea>
+
+                <input type="submit" value="Post" />
+            </form>
+
+            <div>
+                <p>Jane D.: Love your page!</p>
+                <p>Mark T.: Great job!</p>
+            </div>
+        </aside>
 
     </body>
 
