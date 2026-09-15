@@ -39,30 +39,37 @@
         </table> <hr>
         
 
-        <aside>
-            <h3>Send your contact:</h3>
+        <div>
+            <h3>Share your contact:</h3>
 
             <form action="#" method="POST">
                 
                 <label for="vstname">Your name: </label>
-                <input type="text" id="vstname" name="vname" /> <br>
+                <input type="text" id="vstname" name="vname" required/> <br>
+
+                <p>Input below what you're comfortable sharing:</p>
 
                 <label for="email" >Your email: </label>
                 <input type="email" id="email" name="email" /> <br>
 
-                <label for="phonenum" >Your number: </label>
+                <label for="phonenum" >Your phone number: </label>
                 <input type="tel" id="phonenum" name="phonenum" /> <br>
 
-                <label for="group1" >Your preferred mode of contact: </label>
+                <label for="socmed">Your social media link: </label>
+                <input type="text" id="socmed" name="socmed"/> <br><br>
+
+                <label for="group1" >Your preferred mode of contact (if you shared more than 1): </label> <br>
                 <input type="radio" name="group1" value="email" id="x" />
                 <label for="x">Email</label>
                 <input type="radio" name="group1" value="contactno" id="o" />
                 <label for="o">Contact Number</label>
+                <input type="radio" name="group1" value="socmed" id="o" />
+                <label for="o">Social Media</label>
 
                 <input type="submit" value="Send" />
             </form>
 
-        </aside>
+        </div>
     </body>
 
 </html>
