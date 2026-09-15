@@ -10,7 +10,7 @@
             <h1>Personal Information</h1>
         </header>
 
-        <section>
+        <div>
 
             <img src="media/pfp.jpg" alt="Photo" width="150" height="150" /> <hr>
 
@@ -24,30 +24,32 @@
 
             <a href="contacts.html">View Contacts</a>
 
-        </section> <hr>
+        </div> <hr>
 
-        <article>
+        <div>
             <label for="desc">Short Description: </label>
             <pre id="desc">
                 DLSU BSIT Student
                 Currently studying CCAPDEV in section N24
                 Experience in HTML from studying IT-PROG
+                Good knowledge on HTML and PHP, but needs more practice with CSS
             </pre>
-        </article> <hr>
+        </div> <hr>
 
         <div>
             <div>
                 <label for="hobint">Hobbies/Interests: </label>
                 <pre id="hobint">
                     Cooking
+                        > Favorite cuisines: Italian, Japanese, Filipino
                     Video Games
                         >Favorite genre: Racing (Forza Horizon, Assetto Corsa)
-                        Other games I play:
-                        >Genshin Impact
-                        >Minecraft
-                        >War Thunder
-                        >GTA Online
-                        >etc...
+                        >Other games I play:
+                            >Genshin Impact
+                            >Minecraft
+                            >War Thunder
+                            >GTA Online
+                            >etc...
                 </pre>  
             </div>
 
@@ -77,18 +79,17 @@
             </div>      
         </div> <hr>
 
-
-
-        <aside>
+        <div>
             <h3>Visitor messages</h3>
 
             <form action="#" method="POST">
                 
                 <label for="vstname">Your name: </label>
-                <input type="text" id="vstname" name="vname" /> <br>
+                <input type="text" id="vstname" name="vname" placeholder="John Doe" required/> <br>
 
                 <label for="message" >Your message: </label>
-                <textarea id="message" name="message" rows="10" cols="50">
+                <textarea id="message" name="message" rows="10" cols="50" required>
+                Hello...
                 </textarea>
 
                 <input type="submit" value="Post" />
@@ -98,7 +99,7 @@
                 <p>Jane D.: Love your page!</p>
                 <p>Mark T.: Great job!</p>
             </div>
-        </aside>
+        </div>
 
     </body>
 
