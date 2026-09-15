@@ -3,105 +3,121 @@
 
     <head>
         <title>About Page</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <header>
-            <h1>Personal Information</h1>
+        <header id="top">
+            <h1>About Me</h1>
         </header>
 
-        <div>
+        <div class="page_grid">
+            <div id="main_content" class="main">
+                <div class="baseinfobox">
 
-            <img src="media/pfp.jpg" alt="Photo" width="150" height="150" /> <hr>
+                    <img src="media/pfp.jpg" alt="Photo" width="150" height="150" /> 
 
-            <label for="baseinfo"> Basic Information: </label>
-            <pre id="baseinfo">
-                Name: Andrew Tagalag
-                Age: 21
-                ID: 124
-                Course: BSIT
-            </pre>
+                    <div>
+                    <label for="baseinfo"><strong> Basic Information: </strong></label>
+                    <p id="baseinfo">Name: Andrew Tagalag <br> Age: 21 <br> ID: 124 <br> Course: BSIT <br>
+                    </p> 
+                    </div>
+                    <a href="contacts.html">View Contacts</a>
 
-            <a href="contacts.html">View Contacts</a>
+                </div> 
 
-        </div> <hr>
+                <div class="addinfobox">
+                    <label for="desc"><strong>Short Description:</strong></label>
+                    <p id="desc"> 
+                        DLSU BSIT Student <br>
+                        Currently studying CCAPDEV in section N24 <br>
+                        Experience in HTML from studying IT-PROG <br>
+                        Good knowledge on HTML and PHP, but needs more practice with CSS <br>
+                        Familiar with basic Git commands <br>
+                        Unfamiliar with JavaScript
+                    </p>
+                </div> 
 
-        <div>
-            <label for="desc">Short Description: </label>
-            <pre id="desc">
-                DLSU BSIT Student
-                Currently studying CCAPDEV in section N24
-                Experience in HTML from studying IT-PROG
-                Good knowledge on HTML and PHP, but needs more practice with CSS
-                Familiar with basic Git commands
-            </pre>
-        </div> <hr>
+                <div class="addinfobox">
+                    <div>
+                        <label for="hobint"><strong>Hobbies/Interests: </strong></label>
+                        <ul id="hobint">
+                            <li>Cooking</li>
+                                <p>Favorite cuisines: Italian, Japanese, Filipino</p>
+                            <li>Video Games</li>
+                                Favorite genre: Racing (Forza Horizon, Assetto Corsa, etc.) <br>
+                                Other games I play: <br>
+                                <ul>
+                                    <li>Genshin Impact</li>
+                                    <li>Minecraft</li>
+                                    <li>War Thunder</li>
+                                    <li>GTA Online</li>
+                                    <li>etc...</li>
+                                </ul>
+                        </ul>  
+                    </div>
 
-        <div>
-            <div>
-                <label for="hobint">Hobbies/Interests: </label>
-                <pre id="hobint">
-                    Cooking
-                        > Favorite cuisines: Italian, Japanese, Filipino
-                    Video Games
-                        >Favorite genre: Racing (Forza Horizon, Assetto Corsa)
-                        >Other games I play:
-                            >Genshin Impact
-                            >Minecraft
-                            >War Thunder
-                            >GTA Online
-                            >etc...
-                </pre>  
+                    <p><strong>Recordings of Assetto Corsa laps because I have a couple:</strong></p>
+                    <div class="videogrid">
+
+                        <div>
+                            <label for="monza">Monza</label> <br>
+                            <video id="monza" controls width="300">
+                                <source src="media/2026-09-03 monza_f310b.mp4">
+                            </video> 
+                        </div>
+
+                        <div>
+                            <label for="lagunaseca">Laguna Seca</label> <br>
+                            <video id="lagunaseca" controls width="300">
+                                <source src="media/2026-09-08 gr86_lagunaseca.mp4">
+                            </video> 
+                        </div>
+
+                        <div>
+                            <label for="manilabay">Manila Bay</label> <br>
+                            <video id="manilabay" controls width="300">
+                                <source src="media/2026-08-02 vf26_manilabay.mp4">
+                            </video>
+                        </div> 
+
+                        <div>
+                            <label for="brc">Batangas Racing Circuit</label> <br>
+                            <video id="brc" controls width="300">
+                                <source src="media/2026-08-04 mx5_brc.mp4">
+                            </video>
+                        </div>
+                   
+                    </div>      
+                </div> 
             </div>
 
-                <h4>Recordings of Assetto Corsa laps because I have a couple</h4>
+            <div class="visitorbox">
+                <h3>Visitor messages</h3>
 
-                <label for="monza">Monza</label> <br>
-                <video id="monza" controls width="250">
-                    <source src="media/2026-09-03 monza_f310b.mp4">
-                </video> <br><br>
+                <form action="#" method="POST">
+                    
+                    <label for="vstname">Your name: </label>
+                    <input type="text" id="vstname" name="vname" placeholder="John Doe" required/> <br>
 
-                <label for="lagunaseca">Laguna Seca</label> <br>
-                <video id="lagunaseca" controls width="250">
-                    <source src="media/2026-09-08 gr86_lagunaseca.mp4">
-                </video> <br><br>
+                    <label for="message" >Your message: </label>
+                    <textarea id="message" name="message" rows="5" cols="50" required>
+                    Hello...
+                    </textarea>
 
-                <label for="manilabay">Manila Bay</label> <br>
-                <video id="manilabay" controls width="250">
-                    <source src="media/2026-08-02 vf26_manilabay.mp4">
-                </video> <br><br>
+                    <input type="submit" value="Post" />
+                </form>
 
-                <label for="brc">Batangas Racing Circuit</label> <br>
-                <video id="brc" controls width="250">
-                    <source src="media/2026-08-04 mx5_brc.mp4">
-                </video>
-
-            <div>
-            </div>      
-        </div> <hr>
-
-        <div>
-            <h3>Visitor messages</h3>
-
-            <form action="#" method="POST">
-                
-                <label for="vstname">Your name: </label>
-                <input type="text" id="vstname" name="vname" placeholder="John Doe" required/> <br>
-
-                <label for="message" >Your message: </label>
-                <textarea id="message" name="message" rows="10" cols="50" required>
-                Hello...
-                </textarea>
-
-                <input type="submit" value="Post" />
-            </form>
-
-            <div>
-                <p>Jane D.: Love your page!</p>
-                <p>Mark T.: Great job!</p>
+                <div>
+                    <p>Jane D.: Love your page!</p>
+                    <p>Mark T.: Great job!</p>
+                </div>
             </div>
         </div>
 
+        <footer>
+            <a href="#top">Back to top</a>
+        </footer>
     </body>
 
 </html>
