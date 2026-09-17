@@ -3,31 +3,45 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header, footer {
+header {
+    background-color:rgb(130, 201, 255) ;
+    width: 100%;
+    padding: 10px 20px
+}
+
+footer {
+    background-color:rgb(51, 62, 71) ;
+    width: 100%;
+    padding: 10px 20px
+}
+
+nav {
     background-color:rgb(246, 255, 255) ;
     width: 100%;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 20px 
 }
 
-.page_grid {
+/* for the container of the entire page, left column is wider than right column */
+.page_grid { 
     display: grid;
     grid-template-columns: 2fr 1fr; 
     gap: 5px;
     padding: 10px;
 }
 
-.main {
+/* left column containing main contents */ 
+.main { 
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 10px; 
 }
 
 .baseinfobox {
     background-color: azure;
-    width: 800px;
+    width: 900px;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -42,14 +56,15 @@ header, footer {
 
 .addinfobox {
     background-color: azure;
-    width: 800px;
+    width: 900px;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     gap: 15px;
 }
 
-.visitorbox {
+/* right column containing the forms */
+.formbox {
     background-color: azure;
     width: 450px;
     border-radius: 10px;
@@ -61,6 +76,43 @@ header, footer {
 .videogrid {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    gap: 5px;
+    gap: 20px;
     padding: 10px;
+}
+
+a {
+    color: #0065ca;           
+    text-decoration: none;    
+    transition: color 0.2s ease;  
+}
+
+a:hover {
+    color: #ff6600;           
+}
+
+/*a:visited {
+    color: #ffb300;           
+}*/
+
+/* form alignments */
+.form_row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form_row label {
+    min-width: 180px;   
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    border-radius: 6px;
+    border: 1px solid #000000;
+    padding: 6px 10px;
+}
+
+input[type="submit"] {
+    border-radius: 6px;
+    padding: 6px 14px;
 }

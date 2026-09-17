@@ -1,3 +1,4 @@
+<!-- copy to make comments -->
 <!DOCTYPE html>
 <html>
 
@@ -9,9 +10,11 @@
     <body>
         <header id="top">
             <h1>About Me</h1>
-        </header> <hr>
+        </header> 
 
-        <div class="page_grid">
+        <!-- use a 2fr 1fr grid layout for the page -->
+        <div class="page_grid"> 
+            <!-- main content on the left column -->
             <div id="main_content" class="main">
                 <div class="baseinfobox">
 
@@ -62,28 +65,28 @@
 
                         <div>
                             <label for="monza">Monza</label> <br>
-                            <video id="monza" controls width="300">
+                            <video id="monza" controls width="400">
                                 <source src="media/2026-09-03 monza_f310b.mp4">
                             </video> 
                         </div>
 
                         <div>
                             <label for="lagunaseca">Laguna Seca</label> <br>
-                            <video id="lagunaseca" controls width="300">
+                            <video id="lagunaseca" controls width="400">
                                 <source src="media/2026-09-08 gr86_lagunaseca.mp4">
                             </video> 
                         </div>
 
                         <div>
                             <label for="manilabay">Manila Bay</label> <br>
-                            <video id="manilabay" controls width="300">
+                            <video id="manilabay" controls width="400">
                                 <source src="media/2026-08-02 vf26_manilabay.mp4">
                             </video>
                         </div> 
 
                         <div>
                             <label for="brc">Batangas Racing Circuit</label> <br>
-                            <video id="brc" controls width="300">
+                            <video id="brc" controls width="400">
                                 <source src="media/2026-08-04 mx5_brc.mp4">
                             </video>
                         </div>
@@ -92,22 +95,24 @@
                 </div> 
             </div>
 
-            <div class="visitorbox">
+            <!-- interactive form on the right column -->
+            <div class="formbox">
                 <h3>Visitor messages</h3>
 
                 <form action="#" method="POST">
                     
                     <label for="vstname">Your name: </label>
-                    <input type="text" id="vstname" name="vname" placeholder="John Doe" required/> <br>
+                    <input type="text" id="vstname" name="vname" placeholder="John Doe" required/> <br><br>
 
                     <label for="message" >Your message: </label>
                     <textarea id="message" name="message" rows="5" cols="50" required>
                     Hello...
                     </textarea>
 
-                    <input type="submit" value="Post" />
-                </form>
+                    <br><input type="submit" value="Post" />
+                </form> <hr>
 
+                <!-- hardcoded messages since there's no backend -->
                 <div>
                     <p>Jane D.: Love your page!</p>
                     <p>Mark T.: Great job!</p>
