@@ -116,3 +116,9 @@ input[type="submit"] {
     border-radius: 6px;
     padding: 6px 14px;
 }
+
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
